@@ -16,7 +16,7 @@ if [[ -n $4 ]]; then
     ip route add $4 via $2
 fi
 
-for rage in $(cat ir-ip-range.txt)
+for rage in $(cat /tmp/ir-ip-range.txt)
 do
     ip route add $i via $2
 done
